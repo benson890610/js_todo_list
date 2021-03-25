@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	color: #333;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#main-header {
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	background-color: #000;
+}
+
+#main-header h1 {
+	letter-spacing: 2px;
+	color: #777;
+}
+
+.todo-input-content {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+
+#new_todo {
+	width: 92%;
+	border: none;
+	border-bottom: 1px solid #333;
+	background-color: #000;
+	color: #333;
+	outline: none;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	font-size: 16px;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+#add {
+	width: 5%;
+	border: none;
+	padding: 12px 0;
+	color: white;
+	background-color: #333;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+#add:hover {
+	background-color: orange;
+	border-radius: 0;
+}
+
+#main-content {
+	position: relative;
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.errors {
+	border: 1px solid red;
+	background-color: #CD5C5C;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 25px;
+}
+
+.errors p {
+	font-weight: bold;
+	color: #222;
+}
+
+.todo-item {
+	overflow: hidden;
+	padding: 10px;
+	border: 1px solid silver;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.todo-text {
+	float: left;
+	margin-top: 2px;
+}
+
+.todo-edit-btn {
+	float: right;
+	border: 1px solid #006400;
+	padding: 5px;
+	margin-right: 10px;
+	color: #006400;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.todo-edit-btn:hover {
+	background-color: #006400;
+	color: white;
+}
+
+.todo-remove-btn {
+	float: right;
+	border: 1px solid red;
+	padding: 5px;
+	color: red;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.todo-remove-btn:hover {
+	background-color: red;
+	color: white;
+}
+
+.completed {
+	background-color: silver;
+}
+
+.edit-content {
+	position: absolute;
+	top: 30%;
+	transform: translateX(50%);
+	width: 500px;
+	background-color: silver;
+	border: 1px solid #777;
+	padding: 25px;
+}
+
+.remove-content {
+	position: absolute;
+	top: 30%;
+	transform: translateX(50%);
+	width: 500px;
+	background-color: silver;
+	border: 1px solid #777;
+	padding: 25px;
+}
+
+.edit-content p {
+	margin-bottom: 15px;
+}
+
+.edit-content p .edit-todo-title, .remove-todo-title {
+	float: left;
+}
+
+#edit-todo-close, #remove-todo-close {
+	float: right;
+	cursor: pointer;
+}
+
+#edit-todo-close:hover, #remove-todo-close:hover {
+	font-weight: bolder;
+}
+
+#edit-input {
+	width: 350px;
+	outline: none;
+	margin-top: 25px;
+}
+
+.invalid-edit {
+	border: 1px solid red;
+	padding: 5px 5px;
+	border-radius: 3px;
+	color: red;
+}
+
+#completeEditBtn {
+	border: none;
+	background-color: #006400;
+	color: #FFF;
+	padding: 7px 8px;
+	border-radius: 3px;
+	outline: none;
+	margin-left: 6px;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+#completedRemoveBtn {
+	display: block;
+	border: none;
+	position: relative;
+	top: 10px;
+	background-color: red;
+	height: 30px;
+	color: #FFF;
+	padding: 0 10px;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	transition: all .4s ease;
+	clear: both;
+}
+
+#todosStatus {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 15px;
+	border-top: 1px solid #DCDCDC;
+}
+
+.todos-status-1 {
+	font-weight: bolder;
+	color: #000;
+}
+
+.todos-status-2 {
+	font-weight: bolder;
+	color: #006400;
+}
+
+.todos-status-3 {
+	font-weight: bolder;
+	color: #B22222;
+}
+
+#moreOptions {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 25px;
+}
+
+.option-btn {
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all .4s ease;
+	border: 1px solid #777;
+	border-radius: 3px;
+	padding: 3px 5px;
+}
+
+.option-btn:hover {
+	background-color: #777;
+	color: #FFF;
+}
